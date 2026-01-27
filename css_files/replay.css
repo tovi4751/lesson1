@@ -1,0 +1,27 @@
+body{
+    background-color: lightcoral;
+}
+p{
+    margin-top: 15%;
+    direction: rtl;
+    font-size: 200px;
+    text-align: center;
+}
+#tohome{
+    color: rgb(243, 9, 80);
+    font-size: xx-large;
+    position: sticky;
+    top: 0;
+    margin-left: 25px;
+    padding-top: 25px;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+#tohome:hover{
+    color: brown;
+}
+#tohome::before{
+    content: "\f04a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}

@@ -1,0 +1,110 @@
+.faq-main {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fa;
+    margin: 0;
+    margin-top: 100px;
+    padding: 20px;
+    direction: rtl;
+    color: #333;
+}
+
+.faq-main h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.accordion-item input {
+    display: none;
+}
+
+.accordion-item label {
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s, color 0.3s, transform 0.2s; 
+}
+.accordion-item label:hover{
+    background-color: #e0f0ff;
+    color: #2a6fa8;
+    transform: scale(1.03)
+}
+.accordion-item label::after {
+    content: '+';
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.accordion-item input:checked + label::after {
+    content: '-';
+}
+
+.accordion-item .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f9fcff;
+    padding: 0 20px;
+}
+
+.accordion-item input:checked ~ .content {
+    max-height: 500px; 
+    padding: 15px 20px;
+}
+
+.accordion-item .content p {
+    margin: 0;
+    line-height: 1.6;
+}
+@media(max-width: 768px){
+    .faq-main{
+        margin-top: 120px;
+        padding: 15px;
+    }
+    .faq-main h1{
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .accordion{
+        max-width: 100%;
+    }
+    .accordion-item label{
+        padding: 15px 40px 15px 15px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .accordion-item label::after{
+        left: 15px;
+        font-size: 20px;
+    }
+    .accordion-item .content{
+        padding: 0 15px;
+    }
+    .accordion-item input:checked ~ .content{
+        padding: 12px 15px;
+        max-height: 800px;
+    }
+    .accordion-item .content p{
+        font-size: 15px;
+        line-height: 1.6;
+        transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+}

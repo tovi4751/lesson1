@@ -1,0 +1,122 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/top-view-different-pills-with-vaccine-blue-background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.title_order{
+    text-align: center;
+    margin: 6% 10px 3% 10px;
+    border: 2px groove rgb(120, 32, 161);
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+.order{
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    direction: rtl;
+    opacity: 0.9;
+    box-sizing: border-box;
+}
+.choose{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    opacity: 0.9;
+    border-radius: 10px;
+    font-size: 15px;
+    color: rgb(16, 17, 17);
+    direction: rtl;
+    background-color: rgba(187, 130, 240, 0.87);
+}
+#text6{
+    margin-top: 20px;
+}
+.butt{
+    color: gray;
+    width: 80%;
+    padding: 10px;
+    margin: 8px 5px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    opacity: 0.8;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.butt:hover{
+    opacity: 1;
+    color: black;
+}
+input[type=text]:hover,input[type=email]:hover,input[type=number]:hover,input[type=tel]:hover{
+    opacity: 1;
+}
+.choose:hover{
+    opacity: 1;
+}
+#back{
+    color: rgb(92, 37, 155);
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 20px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+#back:hover{
+    color: rgb(60, 6, 88);
+}
+#back::before{
+    content: "\f04a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+@media (max-width: 768px) {
+    .title_order{
+        font-size: 2rem;
+        margin: 5% 10px 3% 10px;
+    }
+
+    .order{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .choose{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .butt{
+        width: 40%;
+    }
+
+    #form{
+        width: 95%;
+    }
+}

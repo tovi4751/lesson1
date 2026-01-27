@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הזמנת תרופה</title>
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css_files/orders.css">
+    <link rel="stylesheet" href="../css_files/bootstrap.min.css">
+</head>
+<body>
+    <a href="../home.html" id="back">home</a>
+    <h1 class="title_order">הזמנת תרופה</h1>
+        <form action="replay.html" id="form">
+                <label for="text">
+                    <input type="text" name="fname" placeholder="שם פרטי" class="order" id="text" required >
+                </label>
+                <label for="text2">
+                    <input type="text" name="lname" placeholder="שם משפחה" class="order" id="text2" required >
+                </label>
+                <label for="text3">
+                    <input type="text" name="address" placeholder="כתובת מגורים" class="order" id="text3" required >
+                </label>
+                <label for="email">
+                    <input type="email" name="email" placeholder="כתובת מייל" class="order" id="email" >
+                </label>
+                <label for="text4">
+                    <input type="text" name="id" placeholder="תעודת זהות" class="order" id="text4" required >
+                </label>
+                <label for="number">
+                    <input type="number" name="age" placeholder="גיל" class="order" id="number" required >
+                </label>
+                <label for="number2">
+                    <input type="tel" name="tel" placeholder="מספר טלפון" class="order" id="number2" required >
+                </label>
+                <div class="kupa">
+                    <fieldset class="choose">
+                        <legend>בחר את קופת החולים בה אתם חברים</legend>
+                            <div class="option">
+                                <input type="radio" name="op" id="op1" value="1" required>
+                                <label for="op1">מכבי</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="op" id="op2" value="2" required>
+                                <label for="op2">מאוחדת</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="op" id="op3" value="3"required>
+                                <label for="op3">כללית</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="op" id="op4" value="4"required>
+                                <label for="op4">לאומית</label>
+                            </div>
+                    </fieldset>
+                </div>
+                <div class="kupa">
+                    <fieldset class="choose">
+                        <legend>בחר את הטעם הרצוי</legend>
+                            <div class="option">
+                                <input type="radio" name="op" id="op11" value="1" required>
+                                <label for="op11">קולה</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="op" id="op12" value="2" required>
+                                <label for="op12">מיץ ענבים</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="op" id="op13" value="3"required>
+                                <label for="op13">פטל</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="op" id="op14" value="4"required>
+                                <label for="op14">אחר</label>
+                            </div>
+                    </fieldset>
+                </div>
+                <label for="text6">
+                    <input type="text" name="medicine" placeholder="שם התרופה הרצויה" class="order" id="text6" required >
+                </label>
+                <label for="text5">
+                    <input type="text" name="flavored" placeholder="הטעם האהוב עליך" class="order" id="text5" >
+                </label>
+                <button type="reset" class="butt">איפוס</button>
+                <button type="submit" class="butt">שליחה</button>
+        </form>
+</body>
+</html>
